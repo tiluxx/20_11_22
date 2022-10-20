@@ -1,0 +1,52 @@
+.MuiFormLabel-root {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-family: var(--font-family);
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: var(--fawn);
+}
+
+.MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: var(--fawn);
+}
+
+.MuiTypography-root {
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.MuiDialogTitle-root {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--raisin-black);
+}
+
+.MuiPaper-root.MuiDialog-paper {
+    background-color: var(--snow);
+    width: 100%;
+}
+
+.MuiInput-root,
+.MuiInputLabel-root {
+    font-family: var(--font-family);
+    color: var(--raisin-black);
+}
+
+.MuiInputLabel-root.Mui-focused {
+    color: var(--pale-spring-bud);
+}
+
+.MuiInputBase-root.MuiInput-root:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid var(--pale-spring-bud);
+}
+
+.MuiInputBase-root.MuiInput-root:after {
+    border-bottom: 2px solid var(--pale-spring-bud);
+}
+
+.MuiIconButton-root:hover {
+    background-color: rgb(230, 224, 255);
+}

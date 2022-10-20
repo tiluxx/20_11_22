@@ -1,0 +1,145 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --pale-spring-bud: hsla(74, 32%, 76%, 1);
+    --pale-spring-bud-2: hsla(67, 50%, 86%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --papaya-whip: hsla(43, 82%, 89%, 1);
+    --fawn: hsla(30, 53%, 64%, 1);
+    --raisin-black: hsla(347, 23%, 12%, 1);
+    --snow: #fffcf9;
+
+    --font-family: 'Roboto Slab', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    background-color: var(--snow);
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    height: 100%;
+    text-rendering: optimizeSpeed;
+    color: var(--raisin-black);
+    overflow-y: overlay;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+button {
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+span {
+    font-family: var(--font-family);
+}
+
+// Custom when select text
+::-moz-selection {
+    /* Code for Firefox */
+    background: var(--fawn);
+    color: var(--snow);
+}
+
+::selection {
+    background: var(--fawn);
+    color: var(--snow);
+}
+
+// Custom the placeholder
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: var(--font-family);
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: var(--font-family);
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: var(--font-family);
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: var(--font-family);
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+// Custom tippy tooltip
+body {
+    .tippy-box {
+        border-width: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'],
+    .tippy-arrow::before {
+        top: -8px;
+    }
+}
+
+// Custom CSS
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Opera and Firefox */
+}

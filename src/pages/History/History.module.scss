@@ -1,0 +1,75 @@
+.container {
+    margin: 40px 120px;
+}
+
+.heading {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.title {
+    padding-bottom: 40px;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.audio-section {
+    padding-bottom: 20px;
+}
+
+.info {
+    padding-bottom: 10px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: var(--fawn);
+    border-radius: 16px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: var(--snow);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--cornsilk);
+        color: var(--fawn);
+    }
+}
+
+.subtitle {
+    text-align: justify;
+}
+
+.person-detail {
+    padding: 40px 0;
+}
+
+.person-name {
+    font-size: 3.6rem;
+    line-height: 5.6rem;
+    color: var(--fawn);
+    text-transform: uppercase;
+}
+
+.person-img {
+    width: 70%;
+    border-radius: 16px;
+}
+
+.person-description {
+    text-align: justify;
+}
+
+.thanks-letter_wrapper {
+    text-align: center;
+}
+
+.letter-title {
+    font-size: 2.6rem;
+    line-height: 5.6rem;
+}
+
+.letter-detail {
+    text-align: justify;
+}
